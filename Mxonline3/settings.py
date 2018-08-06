@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users'
+    'apps.users',
+    'apps.courses',
+    'apps.operation',
+    'apps.organization',
 ]
 
 AUTH_USER_MODEL = "users.UserProfile"
@@ -83,7 +86,8 @@ DATABASES = {
         'NAME': 'mxonline3',
         'USER': 'root',
         'PASSWORD': '123456',
-        'HOST':'127.0.0.1'
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
 
     }
 }
