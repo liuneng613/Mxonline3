@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'apps.organization',
     'xadmin',
     'crispy_forms',
+    'captcha'
 
 ]
 
@@ -145,6 +146,14 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+# 发送邮件的setting设置
+EMAIL_HOST = "smtp.163.com"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "13554514655@163.com"
+EMAIL_HOST_PASSWORD = "ratel123"
+EMAIL_USE_TLS = True
+EMAIL_FROM = "13554514655@163.com"
 
 # 设置邮箱和用户名均可登录
 AUTHENTICATION_BACKENDS = (
